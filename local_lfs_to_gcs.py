@@ -8,7 +8,7 @@ import requests
 import time
 import asyncio
 
-def get_temporary_path(self, oid):
+def get_temporary_path(oid):
     """Compute the temporary path for a file based on its OID."""
     base_dir = ".git/lfs/objects"
     subdir = os.path.join(oid[:2], oid[2:4])
