@@ -1,3 +1,0 @@
-[lfs]
-  standalonetransferagent = gcs
-  customtransfer.gcs.path = /home/scott/local_lfs_to_gcs.py
