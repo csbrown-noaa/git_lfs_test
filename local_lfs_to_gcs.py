@@ -68,6 +68,7 @@ class GCSLfsTransferAgent:
             for chunk in response.iter_content(chunk_size=8192):
                 if chunk:  # Filter out keep-alive new chunks
                     file_data.write(chunk)
+
     def get_access_token(self):
         """Fetches the access token from gcloud."""
         result = subprocess.run(
